@@ -1,5 +1,6 @@
 import Product from "./Product";
 import styles from "./Products.module.scss";
+import Link from "next/link";
 
 export default function Products() {
   return (
@@ -29,8 +30,11 @@ export default function Products() {
           roast="Torra Clara"
           price="25,00"
         />
+        
       </div>
-      <button className={styles.btn}>Ver mais</button>
+      <button className={styles.btn}>
+    <Link href="/viewmore">Ver mais</Link>
+  </button>
     </section>
   );
 }
