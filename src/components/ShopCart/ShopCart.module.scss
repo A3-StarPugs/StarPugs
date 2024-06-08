@@ -1,18 +1,17 @@
-// src/components/ShopCart/ShopCart.module.scss
+
 @import "@/styles/variables.scss";
 @import "@/styles/mixins.scss";
 
 
-.title{                // altera o titulo meu carrinho
+.title{                
     color: #1B2C1E;
      padding: 44.8px 15px;
      font-size: 45px;
-     margin-bottom: -35px;  //altera o espaçamento entre o titulo e os de baixo quantidade e item
-     margin-top: 30px; //abaixa o titulo
-
+     margin-bottom: -35px;  
+     margin-top: 30px; 
     
 }
-.cartContainer { // Contêiner principal para flex layout
+.cartContainer { 
     display: flex;
     justify-content: space-between;
     margin-top: 60px;  
@@ -21,7 +20,7 @@
 }
 
 .cartSection {
-    flex: 3; /* Define a largura da seção de itens do carrinho */
+    flex: 3; 
    
 }
 
@@ -29,20 +28,20 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    align-items: flex-start; 
    
    
 }
 
-.cartItem { // linha que divide a tela 
+.cartItem { 
     display: flex;
     align-items: center;
     padding: 10px 0;
-    width: 100%; /* Assegura que cada item ocupe a largura total do contêiner */
+    width: 100%; 
     margin-top: -20px;
 }
 
-.cartItemImage {           // edição de tamanho da imagem  
+.cartItemImage {           
     width: 80px;
     height: 110px;
     margin: 10px;
@@ -53,7 +52,7 @@
     margin-left: 10px;   
     flex: 1;
     display: flex;
-    justify-content: space-between; // Alinha os elementos horizontalmente
+    justify-content: space-between; 
     align-items: center;
   
 }
@@ -67,7 +66,7 @@
 .cartActions {
     display: flex;
     align-items: center;
-    justify-content: center; // Alinha os botões horizontalmente
+    justify-content: center; 
     margin-left: 20px;
 
     margin-right: 285px;
@@ -75,13 +74,13 @@
 }
 
 
-.cartItemDetails h2 {    // edição titulo dos tipos de torra
+.cartItemDetails h2 {    
     margin: 0;
     font-size: 18px;
     
 }
 
-.cartItemDetails p {         //  preço 
+.cartItemDetails p {        
     margin: 5px 0;
  
 }
@@ -100,7 +99,7 @@
 
 }
 
-.quantity button {        // botoes de + e - 
+.quantity button {        
     margin: 0 5px;
     background-color: transparent;
     border: 1px solid #1B2C1E;
@@ -113,9 +112,9 @@
  
 }
 
-.removeButton{   // Não usando ainda
+.removeButton{   
 
-  background-color:#D9C4A5; /* Added this class to style the "Remover Item" button */
+  background-color:#D9C4A5; 
   color:#006241;
   padding: 5px 10px;
   border: none;
@@ -124,7 +123,7 @@
 }
 
 .summary {
-    flex: 1; /* Largura da coluna de resumo */
+    flex: 1; 
   
     border-radius: 8px;
     margin-top: 130px;
@@ -144,7 +143,7 @@
     line-height: 38px;
     padding-bottom: 0px;
     color: #767676;
-    border-bottom: 1px solid #1B2C1E; /* Linha abaixo do título */
+    border-bottom: 1px solid #1B2C1E; 
 }
 
 .discountCode {
@@ -224,7 +223,7 @@
     margin: 0 auto;
     margin-top: 50px;
 }
-.headerRow {                // conteiner central do quantidade e item 
+.headerRow {               
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
