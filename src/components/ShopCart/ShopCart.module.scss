@@ -1,0 +1,263 @@
+// src/components/ShopCart/ShopCart.module.scss
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+
+.title{                // altera o titulo meu carrinho
+    color: #1B2C1E;
+     padding: 44.8px 15px;
+     font-size: 45px;
+     margin-bottom: -35px;  //altera o espaçamento entre o titulo e os de baixo quantidade e item
+     margin-top: 30px; //abaixa o titulo
+
+    
+}
+.cartContainer { // Contêiner principal para flex layout
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;  
+   
+   
+}
+
+.cartSection {
+    flex: 3; /* Define a largura da seção de itens do carrinho */
+   
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+   
+   
+}
+
+.cartItem { // linha que divide a tela 
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%; /* Assegura que cada item ocupe a largura total do contêiner */
+    margin-top: -20px;
+}
+
+.cartItemImage {           // edição de tamanho da imagem  
+    width: 80px;
+    height: 110px;
+    margin: 10px;
+    
+}
+
+.cartItemDetails {        
+    margin-left: 10px;   
+    flex: 1;
+    display: flex;
+    justify-content: space-between; // Alinha os elementos horizontalmente
+    align-items: center;
+  
+}
+
+.cartItemInfo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cartActions {
+    display: flex;
+    align-items: center;
+    justify-content: center; // Alinha os botões horizontalmente
+    margin-left: 20px;
+
+    margin-right: 285px;
+  
+}
+
+
+.cartItemDetails h2 {    // edição titulo dos tipos de torra
+    margin: 0;
+    font-size: 18px;
+    
+}
+
+.cartItemDetails p {         //  preço 
+    margin: 5px 0;
+ 
+}
+
+.quantity {
+    
+    
+    display: flex;
+    align-items: center;
+    padding: 5px 0 ;
+    font-size: 16px;
+    text-align: left;
+   
+   
+   
+
+}
+
+.quantity button {        // botoes de + e - 
+    margin: 0 5px;
+    background-color: transparent;
+    border: 1px solid #1B2C1E;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: space-between; 
+
+   
+ 
+}
+
+.removeButton{   // Não usando ainda
+
+  background-color:#D9C4A5; /* Added this class to style the "Remover Item" button */
+  color:#006241;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px; 
+}
+
+.summary {
+    flex: 1; /* Largura da coluna de resumo */
+  
+    border-radius: 8px;
+    margin-top: 130px;
+    width: 300px;
+    margin-left: 20px;
+    padding: 13px 40px;
+   
+  
+
+}
+
+.summary h2 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    padding-bottom: 0px;
+    color: #767676;
+    border-bottom: 1px solid #1B2C1E; /* Linha abaixo do título */
+}
+
+.discountCode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1B2C1E;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: #767676;
+    
+}
+
+.discountCode label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    
+    
+}
+
+.discountCode input {
+    
+    border: none;
+    background: none;
+    flex: 1;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.discountCode span {
+    color: #006241;
+    cursor: pointer;
+    font-size: 1.3rem;
+ 
+   
+}
+.applyDiscount {
+    text-decoration: none;
+    color: #006241;
+    cursor: pointer;
+    
+}
+
+.summaryTotals {
+    margin-bottom: 20px;
+   margin-top: 60px;
+}
+.summaryTotals p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #767676;
+    
+}
+
+
+.summaryTotals .total {
+    font-size: 19px;
+    font-weight: 400;
+    color: #1B2C1E;
+   
+
+}
+
+.checkoutButton {
+    display: block;
+    text-align: center;
+    background-color:#006241;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.headerRow {                // conteiner central do quantidade e item 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+   
+   
+   
+  
+   
+}
+
+.headerItem {
+    flex: 1;
+    font-weight: bold;
+    color: #767676;
+    font-size: 12px;
+    border-bottom: 1px solid #1B2C1E;
+    padding: 10px 15px;
+    text-align: center;
+ 
+   }
+.headerQuantidade{
+    font-weight: bold;
+    color:#767676;
+    font-size: 12px;
+    border-bottom: 1px solid #1B2C1E;
+    padding: 10px 400px;
+    text-align: center;
+    flex: 1;
+   
+    
+
+
+}
+
+

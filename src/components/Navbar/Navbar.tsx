@@ -35,11 +35,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="carrinho">
+            <Link href="/shop">
               <FiShoppingCart />
             </Link>
           </li>
-          {renderLinks.slice(3, 5)}
+           {renderLinks.slice(3, 5)}
         </ul>
       </nav>
     </section>
