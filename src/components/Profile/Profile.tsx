@@ -1,50 +1,32 @@
 import ButtonPrimary from "@/ui/ButtonPrimary";
 import Link from "next/link";
 import { FaKey, FaUser } from "react-icons/fa";
-import styles from "./LoginForm.module.scss";
+import styles from "./Profile.module.scss";
 
 export default function Loginform() {
   return (
     <form className={styles.form}>
       <div className={styles.input}>
-        <h2 style={{ paddingBottom: "10px" }}>Recuperação de Senha</h2>
-        <div style={{ paddingBottom: "30px" }} className={styles.dflex}>
-          <h3>Já possui uma conta?</h3>
-          <Link href="/login" className={styles.acesseBtn}>
-            Acesse
-          </Link>
-        </div>
-        <h3>Nome completo</h3>
-        <input id="email" type="email" name="email" required />
+        <h2 style={{ paddingBottom: "10px" }}>Informações da conta</h2>
+        <div style={{ paddingBottom: "30px" }} className={styles.dflex}></div>
+        <h3>Nome</h3>
+        <input id="nome" type="nome" name="nome" required />
 
-        <FaUser />
-        <h3 style={{ paddingTop: "30px" }}>E-mail *</h3>
-        <input id="email" type="email" name="email" required />
+        <h3 style={{ paddingTop: "30px" }}>Data de Nascimento</h3>
+        <input id="data" type="date" name="data" required />
       </div>
       <div className={styles.input}>
-        <h3>Senha *</h3>
-        <input
-          id="password"
-          type="password"
-          name="password"
-          required
-          minLength={6}
-        />
-        <FaKey />
+        <h3>CPF</h3>
+        <input id="cpf" type="cpf" name="cpf" required maxLength={14} />
 
-        <h3 style={{ paddingTop: "30px" }}>Confirmação da senha *</h3>
+        <h3 style={{ paddingTop: "30px" }}>Número de Celular</h3>
         <input
-          id="password"
-          type="password"
-          name="password"
+          id="numero"
+          type="numero"
+          name="numero"
           required
-          minLength={6}
+          maxLength={11}
         />
-        <FaKey />
-        <h3 style={{ paddingTop: "30px" }}>Nome completo</h3>
-        <input id="email" type="email" name="email" required />
-
-        <FaUser />
 
         <div style={{ paddingTop: "30px" }} className={styles.dflex}>
           <input
@@ -59,7 +41,7 @@ export default function Loginform() {
         </div>
       </div>
       <div className={styles.btns}>
-        <ButtonPrimary name="Registrar" href="/register" />
+        <ButtonPrimary name="Editar" href="/edit" />
       </div>
     </form>
   );
