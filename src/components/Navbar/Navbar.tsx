@@ -2,6 +2,7 @@ import Logo from "@/ui/Logo";
 import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+import { FaUser } from "react-icons/fa";
 import styles from "./Navbar.module.scss";
 
 const links = [
@@ -37,6 +38,11 @@ export default function Navbar() {
           <li>
             <Link href="carrinho">
               <FiShoppingCart />
+            </Link>
+          </li>
+          <li>
+            <Link href="profile">
+              <FaUser />
             </Link>
           </li>
           {renderLinks.slice(3, 5)}
