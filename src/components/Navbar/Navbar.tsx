@@ -3,7 +3,7 @@ import Logo from "@/ui/Logo";
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaRegHeart } from "react-icons/fa";
+import { FaRegHeart, FaUser } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./Navbar.module.scss";
@@ -13,6 +13,7 @@ const links = [
   { url: "/cardapio", text: "Cardápio" },
   { url: "/shop", text: "Shop" },
   { url: "/login", text: "Login" },
+  { url: "/register", text: "Registrar" },
 ];
 
 export default function Navbar() {
@@ -47,7 +48,12 @@ export default function Navbar() {
                 <FiShoppingCart />
               </Link>
             </li>
-            {renderLinks.slice(3, 4)}
+            <li>
+              <Link href="profile">
+                <FaUser />
+              </Link>
+            </li>
+            {renderLinks.slice(3, 5)}
           </ul>
         </nav>
       </div>
