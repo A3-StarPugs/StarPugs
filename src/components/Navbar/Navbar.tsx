@@ -30,7 +30,7 @@ export default function Navbar() {
       <nav className={styles.navigation}>
         <ul>
           <li>
-            <Link href="favoritos">
+            <Link href="/favorite">
               <FaRegHeart />
             </Link>
           </li>
