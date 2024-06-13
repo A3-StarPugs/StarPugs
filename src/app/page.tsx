@@ -7,6 +7,9 @@ import Products from "@/components/Products/Products";
 import Promo from "@/components/Promo/Promo";
 import Reviews from "@/components/Reviews/Reviews";
 
+
+
+
 export default function Home() {
   return (
     <main>
@@ -18,6 +21,7 @@ export default function Home() {
       <Promo />
       <Reviews />
       <Footer />
-    </main>
+     
+   </main>
   );
 }

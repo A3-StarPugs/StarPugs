@@ -44,7 +44,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="carrinho">
+              <Link href="/shop">
                 <FiShoppingCart />
               </Link>
             </li>
