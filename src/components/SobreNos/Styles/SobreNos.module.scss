@@ -1,0 +1,148 @@
+.container{
+display: flex;
+flex-direction: column;
+
+}
+
+.header {
+    background-image: url("/assetsSobrenos/mainImgHeaderSobrenos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: clip;
+}
+.titulosp1{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #e6d6a6;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.titulosp2{
+    font-family: inherit;
+    text-transform: none;
+    color: #e6d6a6;
+    font-size: 5.8rem;
+    font-weight: 600;
+    
+}
+.headerp2{
+    background-color: #1B2C1E;
+    height: 50vh;
+    display: flex;
+    text-align: -webkit-center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.titulop2header{
+    text-transform: uppercase;
+    color: #e6d6a6;
+    font-family: inherit;
+    font-size: 3.8rem;
+    padding: 1%;
+}
+.textop2header{
+    color: #e6d6a6;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerTextosHeaderp2{
+    width: 70%;
+}
+.containerTextoMain{   
+    padding-top: 2%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+   
+}
+.ContainerParagrafosMain{
+    width: 100vw;
+    text-align: -webkit-center;
+}
+.main{
+    display: flex;
+    text-align: -webkit-center;
+}
+
+.tituloMain{
+    font-family: inherit;
+    font-weight: bold;
+    padding-bottom: 1%;
+    color: #1B2C1E;
+    text-align: center;
+    
+}
+.textoMain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60vw;
+    text-align: left;
+    font-size: 2.2rem;
+}
+.container3img{
+    background-color: #1B2C1E;
+    height: 100vh;
+    width: 100vw;
+    padding: 5%;
+}
+
+.primeiraimg,.segundaimg,.terceiraimg{
+    height: 25vh;
+    width: 25vw;
+    display: block;
+}
+.texto3ImgsDestaques{
+    display: block;
+    text-transform: uppercase;
+    color: #e6d6a6;
+    font-family: inherit;
+    font-size: 2.3rem;
+    font-weight: 700;
+    width: 40vw;
+    align-content: center;
+}
+.containerImgsTxt{
+    display: flex;
+    gap: 25px;
+    
+}
+.containerImgsTxt2{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+
+
+.primeiraimg{
+    background-image: url("/assetsSobrenos/img1-mulherDandoSopaPraDog.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.segundaimg{
+    background-image: url("/assetsSobrenos/img2-rapazSentadoComDog.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.terceiraimg{
+    background-image: url("/assetsSobrenos/img3-mulherTomandoCafeComDog.png");
+    background-repeat: no-repeat;
+   
+}
+
